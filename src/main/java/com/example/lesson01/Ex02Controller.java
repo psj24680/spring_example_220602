@@ -6,6 +6,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller // @RestController 아님에 주의
 public class Ex02Controller {
 
+	// @Controller + @Responsbody => MessageConverter 클래스 -> jackson 라이브러리
+	// @Controller => ViewResolver 클래스 -> 경로 찾아서 jsp->HTML
 	// http://localhost/lesson01/ex02/1
 	@RequestMapping("/lesson01/ex02/1")
 	public String ex02_1() {
