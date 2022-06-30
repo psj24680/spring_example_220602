@@ -5,7 +5,6 @@ import org.springframework.stereotype.Service;
 
 import com.example.lesson04.dao.NewStudentDAO;
 import com.example.lesson04.model.NewStudent;
-import com.example.lesson04.model.NewUser;
 
 @Service
 public class NewStudentBO {
@@ -15,5 +14,9 @@ public class NewStudentBO {
 
 	public void addNewStudent(NewStudent newStudent) {
 		newStudentDAO.insertNewStudent(newStudent);
+	}
+
+	public NewStudent getStudentById(int id) {
+		return newStudentDAO.selectStudentById(id);
 	}
 }
